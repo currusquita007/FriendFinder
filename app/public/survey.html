@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Survey Questions</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="background-color: pink; color:#39CCCC; height:100px; padding-bottom:30px">
+            <h1 class="text-center" style="font-size: 40px; margin-top: -5px">Find your match!</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#39CCCC; color: white">
+                        <h3 class="panel-title"><strong>Survey Questions</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2>About You</h2>
+                        <h4> Name (Required)</h4>
+                        <input type="text" id="name" class="form-control">
+                        <h4> Link to your picture (Required)</h4>
+                        <input type="text" id="picture" class="form-control">
+                        
+                        <h2>How do you define yourself?</h2>
+
+                        <h4>Statement 1: "Netflix and Chill" is my type of plan</h4>
+                        <select class = "option" id="statement1">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 2: Hiking and be outdoors suit me well</h4>
+                        <select class = "option" id="statement2">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 3: I charge my batteries by talking to people and being social</h4>
+                        <select class = "option" id="statement3">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 4: I define myself by the things I own.</h4>
+                        <select class = "option" id="statement4">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 5: I rely more on my experience than my imagination.</h4>
+                        <select class = "option" id="statement5">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 6: Truth is more important than people's sensitivities.</h4>
+                        <select class = "option" id="statement6">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 7: My mind is always buzzing with unexplored ideas and plans.</h4>
+                        <select class = "option" id="statement7">
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 8: I find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                        <select class = "option" id="statement8">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>
+
+                        <h4>Statement 9: I rarely do something just out of sheer curiosity.</h4>
+                        <select class = "option" id="statement9">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>  
+
+                        <h4>Statement 10: People can rarely upset me.</h4>
+                        <select class = "option" id="statement10">
+
+                            <option value="1">1 (Strongly Disagree!)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree!)</option>
+                        </select>                                             
+
+
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-md" id="search-btn" style="background-color: pink; font-size: 20px"><span class="glyphicon glyphicon-search"></span> Find me a match!!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/addNewUser.js" type="text/javascript"></script>
+
+</html>
+
+
