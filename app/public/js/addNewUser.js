@@ -59,7 +59,7 @@ $("#search-btn").on("click", function(event) {
  console.log(newUser);
 
   // send an AJAX POST-request with jQuery
-  $.post("api/new", newUser)
+  $.post("api/survey", newUser)
     // on success, run this callback
     .done(function(data) {
       // log the data we found

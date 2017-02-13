@@ -23,7 +23,7 @@ module.exports = function(app) {
   });
 
   // Add a user
-  app.post("api/new", function(req, res) {
+  app.post("api/survey", function(req, res) {
 
     console.log("User data:");
     console.log(req.body);
