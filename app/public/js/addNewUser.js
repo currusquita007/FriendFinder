@@ -9,8 +9,6 @@ $("#search-btn").on("click", function(event) {
 
   var answers = [];
 
-  // for (i=1; i<11; i++) {}
-
  var st1 = document.getElementById("statement1");
  var value1 = st1.options[st1.selectedIndex].value;
 
@@ -43,7 +41,9 @@ $("#search-btn").on("click", function(event) {
 
  answers = [value1, value2, value3, value4, value5, value6, value7, value8, value9, value10];
 
- console.log(answers);
+
+//since mySQL doesn't accept arrays, I need to convert it into a string first
+var scoreString = answers.toString();
 
 
   // make a user obj
@@ -53,13 +53,13 @@ $("#search-btn").on("click", function(event) {
     // picture from picture url request
     photo: $("#picture").val().trim(),
     // scores from survey input
-    scores: answers,
+    scores: scoreString,
   };
 
  console.log(newUser);
 
   // send an AJAX POST-request with jQuery
-  $.post("api/survey", newUser)
+  $.post("/api/survey", newUser)
     // on success, run this callback
     .done(function(data) {
       // log the data we found
@@ -71,5 +71,6 @@ $("#search-btn").on("click", function(event) {
   // empty each input box by replacing the value with an empty string
   $("#name").val("");
   $("#picture").val("");
+
 
 });
