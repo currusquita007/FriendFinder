@@ -1,0 +1,31 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "this app allows you to find compatible \"friends\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/currusquita007/FriendFinder.git"
+  },
+  "keywords": [
+    "find",
+    "friends",
+    "compatibility"
+  ],
+  "author": "Ana Suarez Negreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/currusquita007/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/currusquita007/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7"
+  }
+}

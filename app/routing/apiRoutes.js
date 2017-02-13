@@ -30,7 +30,7 @@ module.exports = function(app) {
 
     var dbQuery = "INSERT INTO surveyAnswers (name, photo, scores) VALUES (?,?,?)";
 
-    connection.query(dbQuery, [req.body.name, req.body.phote, req.body.scores], function(err, result) {
+    connection.query(dbQuery, [req.body.name, req.body.photo, req.body.scores], function(err, result) {
       console.log("User Successfully Saved!");
       res.end();
     });
